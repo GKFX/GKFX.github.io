@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  font-size: 30pt;
+}
+
+body>div {
+  padding: 10px 50px 10px 50px;
+}
+
+#intro {
+  background-color: #abf;
+}
+
+#demo {
+  background-color: #bfa;
+}
+
+#questions {
+  background-color: #fab;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 85pt;
+}
+
+h2 {
+  text-align: center;
+  font-size: 70pt;
+}
+
+
+
+#demo div {
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+#demo div>span {
+  width: 2em;
+  display: inline-block;
+}
+
+#demo .pivot {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#demo .fixed {
+  border: 3px solid black;
+  border-radius: 0.4em;
+}
+
+ol ol {
+  list-style-type: lower-latin;
+}
+
+#answers {
+  text-align: center;
+}
+
+img {
+  max-width: 90%;
+}
