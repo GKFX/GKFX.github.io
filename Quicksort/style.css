@@ -68,3 +68,10 @@ ol ol {
 img {
   max-width: 90%;
 }
+
+#footer {
+  text-align: center;
+  background-color: gray;
+  line-height: 30px;
+  font-size: x-small;
+}
