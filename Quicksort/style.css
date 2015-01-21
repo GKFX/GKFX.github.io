@@ -33,6 +33,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 70pt;
+  margin: 55px 0;
 }
 
 
@@ -41,22 +42,22 @@ h2 {
   margin: 0 0 15px;
   text-align: center;
 }
-
 #demo div>span {
   width: 2em;
   display: inline-block;
 }
-
 #demo .pivot {
   text-decoration: underline;
   font-weight: bold;
 }
-
 #demo .fixed {
   border: 3px solid black;
   border-radius: 0.4em;
 }
 
+#questions>ol>li {
+  padding: 0.5em 0;
+}
 ol ol {
   list-style-type: lower-latin;
 }
