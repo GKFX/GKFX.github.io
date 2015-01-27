@@ -4,35 +4,38 @@ body {
   padding: 0;
 
   font-family: sans-serif;
-  font-size: 30pt;
 }
 
-body>div {
-  padding: 10px 50px 10px 50px;
+@media screen {
+  body {
+    font-size: 30pt;
+  }
+  body>div {
+    padding: 10px 50px 10px 50px;
+  }
+  
+  #intro {
+    background-color: #abf;
+  }
+  
+  #demo {
+    background-color: #bfa;
+  }
+  
+  #questions {
+    background-color: #fab;
+  }
 }
-
-#intro {
-  background-color: #abf;
-}
-
-#demo {
-  background-color: #bfa;
-}
-
-#questions {
-  background-color: #fab;
-}
-
 
 
 h1 {
   text-align: center;
-  font-size: 85pt;
+  font-size: 280%;
 }
 
 h2 {
   text-align: center;
-  font-size: 70pt;
+  font-size: 230%;
   margin: 55px 0;
 }
 
@@ -42,9 +45,16 @@ h2 {
   margin: 0 0 15px;
   text-align: center;
 }
-#demo div>span {
-  width: 2em;
+#demo div>span+span {
   display: inline-block;
+  width: 450px;
+}
+#demo div>span>span {
+  /*width: 2em; Too wide. */
+  display: inline-block;
+  padding: 0 5px;
+  border: 3px solid #bfa;
+  border-radius: 0.4em;
 }
 #demo .pivot {
   text-decoration: underline;
@@ -58,21 +68,28 @@ h2 {
 #questions>ol>li {
   padding: 0.5em 0;
 }
-ol ol {
+#questions ol ol {
   list-style-type: lower-latin;
 }
 
 #answers {
   text-align: center;
 }
-
-img {
+#answers img {
   max-width: 90%;
 }
 
 #footer {
+  padding-top: 20px;
   text-align: center;
   background-color: gray;
-  line-height: 30px;
   font-size: x-small;
+}
+#footer img {
+  padding: 10px 0;
+}
+@media print {
+  #footer [href*=w3] {
+    display: none;
+  }
 }

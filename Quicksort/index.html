@@ -16,15 +16,47 @@
 
     <div id="demo">
       <h2>Demonstation</h2>
-      <p>Key: <span class="pivot">pivot</span> <span class="fixed">fixed pivot</span>
-      <div><span class="pivot">1</span> <span>5</span> <span>84</span> <span>3</span> <span>8</span> <span>33</span> <span>12</span> <span>75</span> <span>24</span></div>
-      <div><span class="fixed">1</span> <span class="pivot">5</span> <span>84</span> <span>3</span> <span>8</span> <span>33</span> <span>12</span> <span>75</span> <span>24</span></div>
-      <div><span class="fixed">1</span> <span class="pivot">3</span> <span class="fixed">5</span> <span class="pivot">84</span> <span>8</span> <span>33</span> <span>12</span> <span>75</span> <span>24</span></div>
-      <div><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="pivot">8</span> <span>33</span> <span>12</span> <span>75</span> <span>24</span> <span class="fixed">84</span></div>
-      <div><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="fixed">8</span> <span class="pivot">33</span> <span>12</span> <span>75</span> <span>24</span> <span class="fixed">84</span></div>
-      <div><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="fixed">8</span> <span class="pivot">12</span> <span>24</span> <span class="fixed">33</span> <span class="pivot">75</span> <span class="fixed">84</span></div>
-      <div><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="fixed">8</span> <span class="fixed">12</span> <span class="pivot">24</span> <span class="fixed">33</span> <span class="fixed">75</span> <span class="fixed">84</span></div>
-      <div><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="fixed">8</span> <span class="fixed">12</span> <span class="fixed">24</span> <span class="fixed">33</span> <span class="fixed">75</span> <span class="fixed">84</span></div>
+      <p>Key: <span class="pivot">pivot</span> <span class="fixed">fixed pivot</span> </p>
+      <div>
+        Start. <br>
+        <span><span class="pivot">1</span> <span>5</span> <span>84</span> <span>3</span> <span>8</span> <span>33</span> <span>12</span> <span>75</span> <span>24</span></span>
+        <span>8 comparisons; 0 swaps.</span>
+      </div>
+      <div>
+        After first pass: <br>
+        <span><span class="fixed">1</span> <span class="pivot">5</span> <span>84</span> <span>3</span> <span>8</span> <span>33</span> <span>12</span> <span>75</span> <span>24</span></span>
+        <span>7 comparisons; 2 swaps.</span>
+      </div>
+      <div>
+        After second pass: <br>
+        <span><span class="fixed">1</span> <span class="pivot">3</span> <span class="fixed">5</span> <span class="pivot">84</span> <span>8</span> <span>33</span> <span>12</span> <span>75</span> <span>24</span></span>
+        <span>5 comparisons; 5 swaps.</span>
+      </div>
+      <div>
+        After third pass: <br>
+        <span><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="pivot">8</span> <span>33</span> <span>12</span> <span>75</span> <span>24</span> <span class="fixed">84</span></span>
+        <span>4 comparisons; 0 swaps.</span>
+      </div>
+      <div>
+        After fourth pass: <br>
+        <span><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="fixed">8</span> <span class="pivot">33</span> <span>12</span> <span>75</span> <span>24</span> <span class="fixed">84</span></span>
+        <span>3 comparisons; 3 swaps.</span>
+      </div>
+      <div>
+        After fifth pass: <br>
+        <span><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="fixed">8</span> <span class="pivot">12</span> <span>24</span> <span class="fixed">33</span> <span class="pivot">75</span> <span class="fixed">84</span></span>
+        <span>1 comparison; 0 swaps.</span>
+      </div>
+      <div>
+        After sixth pass: <br>
+        <span><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="fixed">8</span> <span class="fixed">12</span> <span class="pivot">24</span> <span class="fixed">33</span> <span class="fixed">75</span> <span class="fixed">84</span></span>
+        <span>0 comparisons; 0 swaps.</span>
+      </div>
+      <div>
+        After seventh pass: <br>
+        <span><span class="fixed">1</span> <span class="fixed">3</span> <span class="fixed">5</span> <span class="fixed">8</span> <span class="fixed">12</span> <span class="fixed">24</span> <span class="fixed">33</span> <span class="fixed">75</span> <span class="fixed">84</span></span>
+        <span>All boxed. Done.</span>
+      </div>
     </div>
 
     <div id="questions">
@@ -61,7 +93,7 @@
     
     
     <div id="footer">
-        <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Quicksort</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://gkfx.github.io/Quicksort/" property="cc:attributionName" rel="cc:attributionURL">George Bateman</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Quicksort</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://GKFX.github.io/Quicksort/index.html" property="cc:attributionName" rel="cc:attributionURL">George Bateman</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://www.aqa.org.uk/exams-administration/exams-guidance/find-past-papers-and-mark-schemes" rel="dct:source">http://www.aqa.org.uk/exams-administration/exams-guidance/find-past-papers-and-mark-schemes</a>.
         <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fgkfx.github.io%2FQuicksort%2F" >Valid HTML5.</a>
         <br />
         <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0; margin-right:10px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
